@@ -14,6 +14,8 @@ namespace GA_LinearSearch
         {
             Preload();
 
+
+
             Console.WriteLine("Contains");
             Console.WriteLine(ContainsStore(storeDirectory, "Aqua Adventures").ToString()); // True
             Console.WriteLine(ContainsStore(storeDirectory, "Box Lunch").ToString()); // False
@@ -32,6 +34,7 @@ namespace GA_LinearSearch
             foreach(Store store in storeResults) { Console.WriteLine($"{store.Name} - {store.StoreLocation}"); }
             Console.WriteLine(AllStoresOnLevel(stores, "E").Count); // 0
         }
+
 
             public static bool ContainsStore(string[] storeList, string searchKey)
         {
