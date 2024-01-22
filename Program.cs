@@ -1,4 +1,9 @@
 ﻿using static System.Formats.Asn1.AsnWriter;
+// Bander Saleh (bsaleh@student.rtc.edu)
+// CSI 260 - Intro to Data Structures and Algorithms
+// Professor William Cram (wcram@rtc.edu)
+// Guided Assignment 3: Linear Search
+// January 2024
 
 namespace GA_LinearSearch
 {
@@ -46,7 +51,7 @@ namespace GA_LinearSearch
                 }
             }
             return false;
-        }
+        } // METHOD: ContainsStore
 
         public static int StoreByCategory(string[] storeList, string searchKey)
         {
@@ -58,7 +63,7 @@ namespace GA_LinearSearch
                 }
             }
             return -1; // Return -1 if not found
-        }
+        } // METHOD: StoreByCategory
 
         public static List<int> AllStoresOfACategory(string[] storeList, string searchKey)
         {
@@ -71,7 +76,7 @@ namespace GA_LinearSearch
                 }
             }
             return indices;
-        }
+        } // METHOD: AllStoresOfACategory
 
         public static List<Store> AllStoresOnLevel(Store[] storeList, string searchKey)
         {
@@ -84,7 +89,7 @@ namespace GA_LinearSearch
                 }
             }
             return storesInCategory;
-        }
+        } // METHOD: AllStoresOnLevel
 
         static void Preload()
         {
@@ -131,6 +136,14 @@ namespace GA_LinearSearch
             };
 
         } // End Preload
+
+
+        // MY CUSTOM METHODS/DATA! (see below)
+
+
+
+
+        // METHOD: 
 
     }
 }
